@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A quick cryptography CTF challenge.">
+  <title>CyberCorp | The Clockwork Cipher</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html" aria-label="CyberCorp home"><span class="brand-icon">C</span><span>CYBERCORP <b>/ CRYPTO LAB</b></span></a>
+    <span class="live"><i></i> Training environment</span>
+  </header>
+  <main>
+    <div class="topline"><span>CRYPTOGRAPHY / CHALLENGE 01</span><span>BEGINNER • 2–4 MINUTES</span></div>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">INTERCEPTED TRANSMISSION</span>
+        <h1>The Clockwork <em>Cipher.</em></h1>
+        <p>A message was intercepted from an old CyberCorp terminal. Its contents have been scrambled, but the operator left behind a curious note.</p>
+        <p>Recover the original message and submit the flag on your CTF platform.</p>
+      </div>
+      <div class="clock-card" aria-label="Decorative clock with its minute hand at seven minutes past the hour">
+        <div class="clock-face"><span class="twelve">12</span><span class="three">3</span><span class="six">6</span><span class="nine">9</span><div class="hand hour"></div><div class="hand minute"></div><div class="pivot"></div></div>
+        <span>ARCHIVE / TERMINAL 07</span>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="panel-head"><div><span class="eyebrow">FILE 001 / ENCRYPTED MESSAGE</span><h2>Recovered ciphertext</h2></div><span class="state">ENCRYPTED</span></div>
+      <div class="cipher-row"><code id="cipher">JAM{aol_jsvjr_pz_zlclu_tpubalz_mhza}</code><button id="copy" type="button">Copy ciphertext <span aria-hidden="true">↗</span></button></div>
+      <p class="help">The original message begins with the usual three-letter CTF flag prefix.</p>
+    </section>
+    <section class="panel memo">
+      <div class="memo-icon" aria-hidden="true">✦</div>
+      <div><span class="eyebrow">OPERATOR'S NOTE</span><h2>Time is the key.</h2><p>“This clock is always <strong>seven minutes fast</strong>. To put things right, you have to turn it back.”</p><p class="signature">— Shift Supervisor, Archive 07</p></div>
+    </section>
+    <section class="footer-note"><div><span class="eyebrow">YOUR OBJECTIVE</span><h2>Restore the transmission.</h2><p>Decrypt the message and submit the complete <code>CTF{...}</code> flag on your event's CTF platform. There is no submission form on this website.</p></div><span class="tag">75 POINTS</span></section>
+    <p id="status" role="status" class="status"></p>
+  </main>
+  <footer><span>CYBERCORP / CRYPTO LAB</span><span>Static training challenge • GitHub Pages compatible</span></footer>
+</body>
+</html>
